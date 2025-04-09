@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function MouseMoveEffect() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
+  if (typeof window === "undefined") return null; // Ensure this runs only in the browser
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
       setMousePosition({ x: event.clientX, y: event.clientY });

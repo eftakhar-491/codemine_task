@@ -12,6 +12,7 @@ import {
   IconButton,
   ImageList,
   ImageListItem,
+  Pagination,
   Stack,
   Typography,
 } from "@mui/material";
@@ -167,6 +168,24 @@ const Gallery = () => {
           )}
         </DialogContent>
       </Dialog>
+
+      {/* pagination */}
+      <Stack spacing={2} sx={{ mt: 4 }} alignItems="center">
+        <Pagination
+          sx={{
+            "& .MuiPaginationItem-root": {
+              color: "white",
+            },
+            "& .Mui-selected": {
+              backgroundColor: "white",
+              color: "black",
+            },
+          }}
+          count={10}
+          variant="outlined"
+          shape="rounded"
+        />
+      </Stack>
     </Box>
   );
 };
