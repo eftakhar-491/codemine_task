@@ -12,7 +12,7 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-500/10 blur-[100px]" />
         </div>
 
-        <div className="relative z-10">
+        <div className="relative z-10 min-h-screen">
           <header>
             <Header />
           </header>
